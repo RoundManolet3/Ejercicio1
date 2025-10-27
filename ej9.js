@@ -9,14 +9,18 @@ if(Number(bachiller)){
 }else{
     if(bachiller == "si"){
         console.log(`Puedes acceder al ciclo`);
-    }else{
+    }else if(bachiller == "no"){
         console.log("No tienes titulo de bachiller");
         let PA=prompt ("¿Has aprobado el prueba de acceso? Si/no : ");
         PA=PA.toLowerCase().trim();
         if (PA =="si") {
             console.log("Puedes acceder al ciclo");
-        }else{
+        }else if (PA =="no") {
             console.log("No puedes acceder al ciclo");
+        }else{
+            console.log("Tienes que responder si o no");
         }
-    }
+    }else{
+    console.log("Tienes que responder si o no");
+}
 }
